@@ -41,12 +41,11 @@ def get_openai_response(prompt: str, system_context:str = None):
         
         return response.content
     
+
+
     except Exception as e:
         print(f"An error occurred: {e}")
         return None
-
-
-
 system_context = "You are a helpful assistant who explains things in a way that a 5-year-old would understand."
 prompt = "What are the multi-agents structures in AI?"
 response = get_openai_response(prompt, system_context)
