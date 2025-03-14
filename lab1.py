@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 
+
 # Load environment variables from config/.env file
 dotenv_path = os.path.join('../', 'config', '.env')
 load_dotenv(dotenv_path)
