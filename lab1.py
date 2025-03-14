@@ -43,6 +43,9 @@ def get_openai_response(prompt: str, system_context:str = None):
     
 
 
+
+
+
     except Exception as e:
         print(f"An error occurred: {e}")
         return None
