@@ -5,9 +5,9 @@ from langchain_core.messages import HumanMessage, SystemMessage
 
 api_key = "-----"
 
-
-
 # Load environment variables
+load_dotenv()
+
 
 def get_openai_response(prompt: str, system_context:str = None):
 
