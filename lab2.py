@@ -7,6 +7,8 @@ api_key = "-----"
 
 
 
+# Load environment variables
+
 def get_openai_response(prompt: str, system_context:str = None):
 
     try:
