@@ -3,10 +3,11 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 
-api_key = "-----"
 
 # Load environment variables
-load_dotenv()
+dotenv_path = os.path.join('../', 'config', '.env')
+load_dotenv(dotenv_path)
+api_key = os.getenv('OPENAI_API_KEY_TEG')
 
 
 def get_openai_response(prompt: str, system_context:str = None):
